@@ -8,9 +8,9 @@ CakePHP: 2.x (tested with 2.3)
 ## Disclaimer
 *Do not use this for new projects!* We just had to keep the support for legacy 1.2 apps in 2.x.
 
-It creates more complications that it's worth.
-Also it's totally uncessary these days to do it this way. Just never allow access both ways (with and without trailing slash).
-Best to stick to the Cake convention and redirect the trailing slash urls back (using htaccess).
+It creates more complications than it's worth.
+Also, it's totally uncessary these days to do it this way. Just never allow access both ways (with and without trailing slash).
+Best to stick to the Cake convention, dont use trailing slashes and 301-redirect the trailing slash urls back (using htaccess).
 See the notes for details.
 
 ## Get it running
@@ -48,7 +48,6 @@ Your AppHelper also needs adjustments (for Html::url() and Html::link() to funct
 	 * @param mixed $url
 	 * @param boolean $full
 	 * @return string Url
-	 * 2010-03-03 ms
 	 */
 	public function url($url = null, $full = false) {
 		TrailingSlashRouter::addTrailingSlash(true);
