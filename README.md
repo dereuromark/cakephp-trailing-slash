@@ -7,7 +7,7 @@ License: MIT
 CakePHP: 2.x (tested with 2.3)
 
 ## Disclaimer
-*Do not use this for new projects!* We just had to keep the support for legacy 1.2 apps in 2.x.
+**Do not use this for new projects!** We just had to keep the support for legacy 1.2 apps in 2.x.
 
 It creates more complications than it's worth.
 Also, it's totally uncessary these days to do it this way. Just never allow access both ways (with and without trailing slash).
